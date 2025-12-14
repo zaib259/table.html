@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Table</title>
+
+<style>
+
+/* ================= LIGHT MODE (DEFAULT) ================= */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 50px;
+}
+
+/* Fake Button (Label) */
+.toggle-btn {
+    padding: 12px 25px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide checkbox */
+#toggle {
+    display: none;
+}
+
+/* Title */
+.get {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Table */
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 50px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ================= DARK MODE (CSS ONLY) ================= */
+#toggle:checked ~ .page {
+    background-color: #2f2f2f;
+    color: white;
+}
+
+#toggle:checked ~ .page .header {
+    background-color: #696969;
+}
+
+#toggle:checked ~ .page table {
+    border: 2px solid white;
+}
+
+#toggle:checked ~ .page th,
+#toggle:checked ~ .page td {
+    border: 1px solid white;
+}
+
+#toggle:checked ~ .page footer {
+    background-color: #696969;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Hidden checkbox -->
+<input type="checkbox" id="toggle">
+
+<div class="page">
+
+<header class="header">
+    <h1 style="color:chartreuse;">Time Table</h1>
+    <label for="toggle" class="toggle-btn">Dark / Light</label>
+</header>
+
+<h1 class="get">
+    Time Table - Muhammad Usman Javad Skill Developer Program <br>
+    Faisalabad
+</h1>
+
+<table>
+<tr>
+    <th></th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+</tr>
+
+<tr>
+    <td>Row 1</td>
+    <td>6am to 7pm</td>
+    <td>6am to 7pm</td>
+    <td>6am to 7pm</td>
+    <td></td><td></td><td></td><td></td>
+</tr>
+
+<tr>
+    <td>Row 2</td>
+    <td></td><td></td><td></td>
+    <td>6am to 7pm</td>
+    <td>6am to 7pm</td>
+    <td></td><td></td>
+</tr>
+
+<tr>
+    <td>Row 3</td>
+    <td>6am to 7pm</td>
+    <td>6am to 7pm</td>
+    <td>6am to 7pm</td>
+    <td></td><td></td><td></td><td></td>
+</tr>
+
+<tr>
+    <td>Row 4</td>
+    <td></td><td></td><td></td>
+    <td>6am to 7pm</td>
+    <td>(Section B)<br>6am to 7pm</td>
+    <td>(Section A)<br>6am to 7pm</td>
+    <td>(Section D)<br>6am to 7pm</td>
+</tr>
+
+<tr>
+    <td>Row 5</td>
+    <td></td><td></td><td></td>
+    <td>6am to 7pm</td>
+    <td>6am to 7pm</td>
+    <td></td><td></td>
+</tr>
+</table>
+
+<footer>
+    All Rights Reserved &copy; Muhammad Usman Javad
+</footer>
+
+</div>
+
+</body>
+</html>
